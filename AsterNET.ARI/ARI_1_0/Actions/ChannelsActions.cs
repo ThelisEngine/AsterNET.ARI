@@ -102,7 +102,7 @@ namespace AsterNET.ARI.Actions
 					throw new AriException("Channel with given unique ID already exists.", (int)response.StatusCode);
 				default:
 					// Unknown server response
-					throw new AriException(string.Format("Unknown response code {0} from ARI.", response.StatusCode), (int)response.StatusCode);
+					throw new AriException(string.Format("Unknown response code '{0}' from ARI.", response.StatusCode), (int)response.StatusCode);
             }
 		}
 		/// <summary>
